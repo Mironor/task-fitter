@@ -1,0 +1,33 @@
+export const TASK_ENUM_DURATION_SMALL = 0;
+export const TASK_ENUM_DURATION_MEDIUM = 1;
+export const TASK_ENUM_DURATION_LARGE = 2;
+
+export const TASK_DURATION_LABELS = {
+    [TASK_ENUM_DURATION_SMALL]: '10 minutes',
+    [TASK_ENUM_DURATION_MEDIUM]: '30 minutes',
+    [TASK_ENUM_DURATION_LARGE]: '1 hour',
+};
+
+export const TASK_DURATION_SCORES = {
+    [TASK_ENUM_DURATION_SMALL]: 1,
+    [TASK_ENUM_DURATION_MEDIUM]: 2,
+    [TASK_ENUM_DURATION_LARGE]: 3,
+};
+
+export const TASK_ENUM_PRIORITY_LOW = 0;
+export const TASK_ENUM_PRIORITY_DEFAULT = 1;
+export const TASK_ENUM_PRIORITY_HIGH = 2;
+
+export const TASK_PRIORITY_LABELS = {
+    [TASK_ENUM_PRIORITY_LOW]: 'Low priority',
+    [TASK_ENUM_PRIORITY_DEFAULT]: 'Default priority',
+    [TASK_ENUM_PRIORITY_HIGH]: 'High priority',
+};
+
+export const TASK_PRIORITY_SCORES = {
+    [TASK_ENUM_PRIORITY_LOW]: 10,
+    [TASK_ENUM_PRIORITY_DEFAULT]: 20,
+    [TASK_ENUM_PRIORITY_HIGH]: 30
+};
+
+
