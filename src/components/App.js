@@ -6,7 +6,7 @@ import './App.css';
 import * as constants from '../configs/constants'
 import Login from './Login/Login'
 import Home from './Home/Home'
-import TaskCurrent from './TaskCurrent/TaskCurrent'
+import CurrentTask from './CurrentTask/CurrentTask'
 import Tasks from './Tasks/Tasks'
 
 
@@ -95,11 +95,11 @@ class App extends Component {
                             <Route exact path='/home' render={() => <Home user={this.state.user}/>}/>
 
                             <Route exact path={'/current_task/' + constants.TASK_ENUM_DURATION_SMALL}
-                                   render={() => <TaskCurrent task={this.state.smallTask}/>}/>
+                                   render={() => <CurrentTask task={this.state.smallTask}/>}/>
                             <Route exact path={'/current_task/' + constants.TASK_ENUM_DURATION_MEDIUM}
-                                   render={() => <TaskCurrent task={this.state.mediumTask}/>}/>
+                                   render={() => <CurrentTask task={this.state.mediumTask}/>}/>
                             <Route exact path={'/current_task/' + constants.TASK_ENUM_DURATION_LARGE}
-                                   render={() => <TaskCurrent task={this.state.largeTask}/>}/>
+                                   render={() => <CurrentTask task={this.state.largeTask}/>}/>
 
                             <Route exact path='/tasks' render={() => <Tasks user={this.state.user}
                                                                             tasks={this.state.tasks}
