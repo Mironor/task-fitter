@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
-import {Container, Divider, Statistic, Header} from 'semantic-ui-react';
+import {Container, Divider, Statistic, Header, Button} from 'semantic-ui-react';
 
 class CurrentTask extends Component {
 
@@ -71,6 +71,15 @@ class CurrentTask extends Component {
                     <Statistic.Value>{paddedMinutes}:{paddedSeconds}</Statistic.Value>
                     <Statistic.Label>Time left</Statistic.Label>
                 </Statistic>
+
+                <Button.Group basic>
+                    <Button basic onClick={() => this.setState({_updating: true})}>
+                        Update
+                    </Button>
+                    <Button basic onClick={() => this.props.handleTaskDelete(this.props.id)}>
+                        Delete
+                    </Button>
+                </Button.Group>
             </Container>
         );
         else return (<div>Loading</div>)
